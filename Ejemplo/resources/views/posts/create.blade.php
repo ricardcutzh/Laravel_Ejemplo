@@ -15,16 +15,16 @@
     {{csrf_field()}}
     <fieldset class="form-group">
       <label>Title</label>
-      <input type="text" class="form-control" name="title" placeholder="Post Title...">
+      <input type="text" class="form-control" name="title" value="{{old('title')}}" placeholder="Post Title...">
     </fieldset>
     <fieldset class="form-group">
       <label>Description</label>
-      <textarea name="description" rows="5" class="form-control"></textarea>
+      <textarea name="description" rows="5" class="form-control" >{{old('description')}}</textarea>
 
     </fieldset>
     <fieldset class="form-group">
       <label>URL</label>
-      <input type="text" class="form-control" name="url" placeholder="Url To Post...">
+      <input type="text" class="form-control" value="{{old('url')}}" name="url" placeholder="Url To Post...">
       <small class="text-muted">Gracias por crear un nuevo Post</small>
     </fieldset>
     <button type="submit" class="btn btn-primary">Create New Post</button>

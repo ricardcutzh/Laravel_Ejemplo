@@ -10,5 +10,5 @@
     </div>
     <hr>
   @endforeach
-
+  {{$posts->render()}}
 @endsection
